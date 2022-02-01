@@ -35,7 +35,6 @@ useEffect(() => {
 })
 
   const onChangeTime = (time) => {
-    console.log(time)
     time = time.replace(":", "");
     time = parseInt(time);
     let ampm = time >= 1200 ? "PM" : "AM";
@@ -53,9 +52,7 @@ useEffect(() => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-     
      addTrips({
-      id: length,
       start: currentStart,
       finish: currentFinish,
       start_time: onChangeTime(currentStartTime),
@@ -79,7 +76,7 @@ useEffect(() => {
       <div className="form-container">
         <label>End location:</label>
         <input
-          id="finish"
+          id="finish" 
           type="text"
           onChange={onSetCurrent}
           value={currentFinish}

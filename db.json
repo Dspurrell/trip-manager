@@ -1,18 +1,18 @@
 {
-    "trips": [
-        {
-            "id": 0,
-            "start": "11 San Martin dr",
-            "finish": "Ringwood",
-            "start_time": 15,
-            "finish_time": 15
-        },
-        {
-            "id": 1,
-            "start": "23132131221",
-            "finish": "1213221",
-            "start_time": 15,
-            "finish_time": 15
-        }
-    ]
+  "trips": [
+    {
+      "start": "asd",
+      "finish": "asd",
+      "start_time": "5:27PM",
+      "finish_time": "5:28PM",
+      "id": 1
+    },
+    {
+      "start": "asf",
+      "finish": "asf",
+      "start_time": "5:33PM",
+      "finish_time": "5:34PM",
+      "id": 2
+    }
+  ]
 }

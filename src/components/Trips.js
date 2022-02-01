@@ -1,7 +1,7 @@
 import Trip from "./Trip";
 import { useState, useEffect } from 'react'
 
-export const Trips = ({ isLoaded, trips, deleteTrip, updateTrip }) => {
+export const Trips = ({ isLoaded, trips, deleteTrip, updateTrip, editId, onSetEditId }) => {
 
   const [text, setText] = useState('')
 
@@ -18,8 +18,8 @@ export const Trips = ({ isLoaded, trips, deleteTrip, updateTrip }) => {
   } else {
     return (
       <div className="trips-container">
-        {trips.slice(0).reverse().map((trip, index) => {
-          return <Trip key={index} deleteTrip={deleteTrip} trip={trip} updateTrip={updateTrip}/>;
+        {trips.map((trip, index) => {
+          return <Trip onSetEditId={onSetEditId} editId={editId} key={index} deleteTrip={deleteTrip} trip={trip} updateTrip={updateTrip}/>;
         })}
       </div>
     );
